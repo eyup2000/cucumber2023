@@ -34,6 +34,10 @@ public class Day15_C1_GoogleSearchStepDefinitions {
     }
 
 
+
+
+
+    //---------------------------------------------------------------------------------------------
     @Given("kullanıcı caydanlik'i arar")
     public void kullanıcı_caydanlik_i_arar() {
         googlePage.googleSearchBox.sendKeys("caydanlik"+Keys.ENTER);
@@ -46,6 +50,10 @@ public class Day15_C1_GoogleSearchStepDefinitions {
     }
 
 
+
+
+
+    //---------------------------------------------------------------------------------------------
     @Given("kullanici cicek'i arar")
     public void kullanici_cicek_i_arar() {
         googlePage.googleSearchBox.sendKeys("cicek"+Keys.ENTER);
@@ -56,10 +64,26 @@ public class Day15_C1_GoogleSearchStepDefinitions {
 
         Assert.assertTrue("cicek",Driver.getDriver().getTitle().contains("cicek"));
 
+    }
+
+
+
+
+
+//----------------------------------------------------------------------------------------
+    @Given("kullanici BMW'i arar")
+    public void kullanici_bmw_i_arar() {
+        googlePage.googleSearchBox.sendKeys("BMW"+Keys.ENTER);
 
     }
-    @Then("kullanici application kapatir")
-    public void kullanici_application_kapatir() {
-       Driver.closeDriver();
+    @Then("kullanici sonuclarda BMW oldugunu verify eder")
+    public void kullanici_sonuclarda_bmw_oldugunu_verify_eder() {
+        Assert.assertTrue(Driver.getDriver().getTitle().contains("BMW"));
+
     }
+
 }
+
+
+
+
