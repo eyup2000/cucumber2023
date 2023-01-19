@@ -5,15 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a5576ef7-5d1d-4f59-a97a-e2ebf28b2914" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/test/java/runners/FailedScenarioRunner.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/stepdefinitions/Day18_C8_Reusable_Step_Definitions.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/stepdefinitions/Hooks.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/utilities/ReusableMethods.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/pages/YeniHesapA01.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/stepdefinitions/Alistirma01.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/Alistirma/alistirma01.feature" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/configuration.properties" beforeDir="false" afterPath="$PROJECT_DIR$/configuration.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/runners/Runner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/runners/Runner.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/stepdefinitions/Day17_C7_Room_Rezervasyon_Step_Definitions.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/stepdefinitions/Day17_C7_Room_Rezervasyon_Step_Definitions.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/Sprint_13.06/Eagle/Day17_C6_US100451_oda_rezervasyonu.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/Sprint_13.06/Eagle/Day17_C6_US100451_oda_rezervasyonu.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/stepdefinitions/Hooks.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/stepdefinitions/Hooks.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,7 +45,7 @@
     &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
   }
 }</component>
-  <component name="RunManager" selected="JUnit.FailedScenarioRunner">
+  <component name="RunManager" selected="JUnit.Runner">
     <configuration name="Feature: Day16_C2_parameterizing_feature_file_string" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
       <option name="CUCUMBER_CORE_VERSION" value="5" />
       <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/Day16_C2_parameterizing_feature_file_string.feature" />
@@ -137,8 +135,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.FailedScenarioRunner" />
         <item itemvalue="JUnit.Runner" />
+        <item itemvalue="JUnit.FailedScenarioRunner" />
         <item itemvalue="Cucumber Java.Feature: Day17_C6_US100451_oda_rezervasyonu" />
         <item itemvalue="Cucumber Java.Feature: Day16_C2_parameterizing_feature_file_string" />
         <item itemvalue="Cucumber Java.Feature: firstfeaturefile" />

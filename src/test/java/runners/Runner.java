@@ -17,8 +17,8 @@ import org.junit.runner.RunWith;
         },
         features = "src/test/resources",//zorunlu =>> featrue dosyasının pathinin girilmesi lazım
         glue = "stepdefinitions",//zorunlu => stepdefinition adresi (pathi)
-        tags = "@manager_login_test",
-        dryRun = false //opsiyoneldir yazmasakta false olur
+        tags = "@alistirma",
+        dryRun = true //opsiyoneldir yazmasakta false olur
 
 )
 public class Runner {
