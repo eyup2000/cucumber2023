@@ -8,9 +8,16 @@ import org.junit.runner.RunWith;
 
 //calistirmak istedigim feature file belitmeliyim
 @CucumberOptions(
-        features = "src/test/resources/Sprint_13.06/Eagle",//zorunlu =>> featrue dosyasının pathinin girilmesi lazım
+        plugin = {
+                "pretty",
+                "html:target/default-cucumber-reports.html",
+                "json:target/json-reports/cucumber.json",
+                "junit:target/xml-report/cucumber.xml",
+                "rerun:target/failedRerun.txt" ,
+        },
+        features = "src/test/resources",//zorunlu =>> featrue dosyasının pathinin girilmesi lazım
         glue = "stepdefinitions",//zorunlu => stepdefinition adresi (pathi)
-        tags = "@room_rezervasyonu",
+        tags = "@manager_login_test",
         dryRun = false //opsiyoneldir yazmasakta false olur
 
 )

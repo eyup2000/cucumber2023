@@ -14,6 +14,7 @@ public class Day17_C7_Room_Rezervasyon_Step_Definitions {
     LoginPages loginPages = new LoginPages();
     DefaultPage defaultPage = new DefaultPage();
     RoomRezervasyonPages roomRezervasyonPages = new RoomRezervasyonPages();
+
     @Given("kullanici manager kullanici bilgilerini girer")
     public void kullanici_manager_kullanici_bilgilerini_girer(DataTable kullaniciBilgileri) {
       List<String> menejerKullaniciBilgileri = kullaniciBilgileri.row(1);
@@ -91,6 +92,7 @@ public class Day17_C7_Room_Rezervasyon_Step_Definitions {
         Thread.sleep(3000);
         roomRezervasyonPages.okButton.click();
     }
+
 
 
 }
