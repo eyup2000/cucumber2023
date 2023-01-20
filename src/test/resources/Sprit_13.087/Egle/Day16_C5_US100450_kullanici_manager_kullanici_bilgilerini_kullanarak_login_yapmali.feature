@@ -1,5 +1,6 @@
-@manager_login_test
+@Login_test
 Feature: Login_manager_kullanici_bilgileriyle_deneme
+  @manager_login_test
   Scenario Outline:
     Given kullanici application sayfasindadir
     And kullanici manager id "<kullaniciadi>" girer

@@ -23,7 +23,7 @@ Scenario: TC01_iphone_search
     Then kullanici sonuclarda cicek oldugunu verify eder
     Then kullanici application kapatir
 
-
+@kafve @smoke
   Scenario: TC02_BMW_search
     And kullanici BMW'i arar
     Then kullanici sonuclarda BMW oldugunu verify eder
