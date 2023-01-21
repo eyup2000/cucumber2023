@@ -9,6 +9,7 @@ import pages.LoginPages;
 import pages.RoomRezervasyonPages;
 
 import java.util.List;
+import java.util.Map;
 
 public class Day17_C7_Room_Rezervasyon_Step_Definitions {
     LoginPages loginPages = new LoginPages();
@@ -17,6 +18,7 @@ public class Day17_C7_Room_Rezervasyon_Step_Definitions {
 
     @Given("kullanici manager kullanici bilgilerini girer")
     public void kullanici_manager_kullanici_bilgilerini_girer(DataTable kullaniciBilgileri) {
+        /*
       List<String> menejerKullaniciBilgileri = kullaniciBilgileri.row(1);
         System.out.println(menejerKullaniciBilgileri);
         System.out.println(menejerKullaniciBilgileri.get(0));
@@ -25,6 +27,40 @@ public class Day17_C7_Room_Rezervasyon_Step_Definitions {
         loginPages.username.sendKeys(menejerKullaniciBilgileri.get(0));
         loginPages.password.sendKeys(menejerKullaniciBilgileri.get(1));
         loginPages.loginButton.click();
+
+        //data List<List<String>> olarak alma
+        List<List<String>> manajerBilgiler2 = kullaniciBilgileri.asLists();
+        System.out.println(manajerBilgiler2);
+
+       /* for (List<String> herbirBilgi : manajerBilgiler2){
+            System.out.println(herbirBilgi);
+            System.out.println(herbirBilgi.get(0));
+            System.out.println(herbirBilgi.get(1));
+
+            if (!herbirBilgi.get(0).equals("username")){
+                loginPages.username.sendKeys(herbirBilgi.get(0));
+                loginPages.password.sendKeys(herbirBilgi.get(1));
+                loginPages.loginButton.click();
+            }
+
+        }
+        //datayi lambda ile alma
+        manajerBilgiler2.stream().filter(t ->!t.get(0).equals("username")).forEach(t ->{
+            loginPages.username.sendKeys(t.get(0));
+            loginPages.password.sendKeys(t.get(1));
+            loginPages.loginButton.click();
+        });*/
+
+        //List<Map<String ,String>> alma
+      List<Map<String ,String>> manajerBilgi3 =  kullaniciBilgileri.asMaps(String.class , String.class);
+        System.out.println(manajerBilgi3);
+        for (Map<String,String> herBirBilgi : manajerBilgi3){
+            System.out.println(herBirBilgi);
+            loginPages.username.sendKeys(herBirBilgi.get("username"));
+            loginPages.password.sendKeys(herBirBilgi.get("password"));
+            loginPages.loginButton.click();
+        }
+
     }
     @Then("kullanici {string} oldugunu verify eder")
     public void kullanici_oldugunu_verify_eder(String string) {

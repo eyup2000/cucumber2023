@@ -22,5 +22,5 @@ Feature: yeni_hesap_acma_deneme
     Then kullanıcı browser kapatir
     Examples: Test Data
       | name   | email             | sifre  | isim   | soyisim | sirket | adress1           | adress2            | state  | zipcode | number     |
-      | Mehmet | mehmet759@gmail.com | memo1! | mehmet | bulak   | amazon | istanbul gungoren | ankara yenigun mh. | kelime | 54894   | 4598515624 |
-      | Aydin | aydin9874@gmail.com | aydın1! | Aydin | kaya   | google | istanbul bağcılar | sivas kangal  | sayi | 69492   | 02124875 |
+      | Mehmet | mehmet12548@gmail.com | memo1! | mehmet | bulak   | amazon | istanbul gungoren | ankara yenigun mh. | kelime | 54894   | 4598515624 |
+      | Aydin | aydin7895@gmail.com | aydın1! | Aydin | kaya   | google | istanbul bağcılar | sivas kangal  | sayi | 69492   | 02124875 |

@@ -19,7 +19,7 @@ import org.junit.runner.RunWith;
             },
             features = "@target/failedRerun.txt",//zorunlu =>> featrue dosyasının pathinin girilmesi lazım
             glue = "stepdefinitions",//zorunlu => stepdefinition adresi (pathi)
-            tags = "@manager_login_test",
+            tags = "@alistirma",
             dryRun = false //opsiyoneldir yazmasakta false olur
 
     )
