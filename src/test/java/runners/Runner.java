@@ -16,9 +16,9 @@ import org.junit.runner.RunWith;
                 "rerun:target/failedRerun.txt" ,
                 "com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:"
         },
-        features = "src/test/resources",//zorunlu =>> featrue dosyasının pathinin girilmesi lazım
+        features = "src/test/resources/ödev/odev01.feature",//zorunlu =>> featrue dosyasının pathinin girilmesi lazım
         glue = "stepdefinitions",//zorunlu => stepdefinition adresi (pathi)
-        tags = "@excel_otomasyon",
+        tags = "@create",
         dryRun = false //opsiyoneldir yazmasakta false olur
 
 )
