@@ -24,12 +24,12 @@ public class Hooks {
     @After
 
     public void tearDown(Scenario scenario) {
-//   final byte[]  screenshot =  ((TakesScreenshot) Driver.getDriver()).getScreenshotAs(OutputType.BYTES);
+  final byte[]  screenshot =  ((TakesScreenshot) Driver.getDriver()).getScreenshotAs(OutputType.BYTES);
 //    // screenShot'İ scenario raporuna ekle
-//       if (scenario.isFailed()) {
-//            scenario.attach(screenshot, "image/png", "screenShot");
-//       }
-//    }
+     if (scenario.isFailed()) {
+            scenario.attach(screenshot, "image/png", "screenShot");
+       }
+    }
     }
 
-}
+

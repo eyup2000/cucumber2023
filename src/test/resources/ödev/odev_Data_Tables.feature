@@ -1,7 +1,7 @@
 @odev_Create_Data_tables
 Feature: data tables
 
-Scenario:
+Scenario: test data
 When kullanıcı adresine gider
 And kullanıcı new button Click eder
 When kullanıcı tüm fields girer

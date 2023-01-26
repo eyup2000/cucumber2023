@@ -14,11 +14,12 @@ import org.junit.runner.RunWith;
                     "json:target/json-reports/cucumber.json",
                     "junit:target/xml-report/cucumber.xml",
                     "rerun:target/failedRerun.txt" ,
+                    "com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:"
             },
-            features = "src/test/resources",//zorunlu =>> featrue dosyasının pathinin girilmesi lazım
-            glue = "stepdefinitions",//zorunlu => stepdefinition adresi (pathi)
-            tags = "@odev_Excel",
-            dryRun = false //opsiyoneldir yazmasakta false olur
+            features = "src/test/resources",
+            glue = "stepdefinitions",
+            tags = "@odev_Create_Data_tables",
+            dryRun = false
 
     )
     public class TestRunner {

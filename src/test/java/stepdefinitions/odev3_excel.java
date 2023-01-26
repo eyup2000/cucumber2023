@@ -47,6 +47,7 @@ public class odev3_excel {
             createPage.Position.sendKeys(datalar.get("Position"));
             createPage.Office.sendKeys(datalar.get("Office"));
             createPage.Extension.sendKeys(datalar.get("Extension"));
+            Thread.sleep(3000);
             createPage.StartDate.sendKeys(datalar.get("Start Date"));
             createPage.Salary.sendKeys(datalar.get("Salary"));
 
