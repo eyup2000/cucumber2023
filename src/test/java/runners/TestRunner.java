@@ -18,7 +18,7 @@ import org.junit.runner.RunWith;
             },
             features = "src/test/resources",
             glue = "stepdefinitions",
-            tags = "@odev_Create_Data_tables",
+            tags = "@otel_list",
             dryRun = false
 
     )
