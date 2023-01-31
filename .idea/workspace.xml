@@ -5,13 +5,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a5576ef7-5d1d-4f59-a97a-e2ebf28b2914" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/test/java/pages/otelPage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/stepdefinitions/Alistirma02.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/Alistirma/alistirma02.feature" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/pages/reservationsPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/stepdefinitions/Alistirma03.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/Alistirma/alistirma03.feature" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/runners/TestRunner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/runners/TestRunner.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/stepdefinitions/Alistirma02.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/stepdefinitions/Alistirma02.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test-output/PdfReport/ExtentPdf.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/test-output/PdfReport/ExtentPdf.pdf" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test-output/SparkReport/Spark.html" beforeDir="false" afterPath="$PROJECT_DIR$/test-output/SparkReport/Spark.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/embedded1.png" beforeDir="false" afterPath="$PROJECT_DIR$/test-output/embedded1.png" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -77,14 +79,14 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Feature: odev_Data_Tables" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+    <configuration name="Scenario: T01_Hesap" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
       <option name="CUCUMBER_CORE_VERSION" value="5" />
-      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/ödev/odev_Data_Tables.feature" />
-      <option name="GLUE" value="stepdefinitions" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/Alistirma/alistirma02.feature" />
       <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
       <module name="cucumber2023" />
-      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter" />
-      <option name="SUGGESTED_NAME" value="Feature: odev_Data_Tables" />
+      <option name="NAME_FILTER" value="^T01_Hesap$" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter --name &quot;^T01_Hesap$&quot;" />
+      <option name="SUGGESTED_NAME" value="Scenario: T01_Hesap" />
       <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
       <extension name="coverage">
         <pattern>
@@ -96,14 +98,15 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Scenario: T01_Hesap" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+    <configuration name="Scenario: hotel" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
       <option name="CUCUMBER_CORE_VERSION" value="5" />
-      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/Alistirma/alistirma02.feature" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/Alistirma/alistirma03.feature" />
+      <option name="GLUE" value="stepdefinitions" />
       <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
       <module name="cucumber2023" />
-      <option name="NAME_FILTER" value="^T01_Hesap$" />
-      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter --name &quot;^T01_Hesap$&quot;" />
-      <option name="SUGGESTED_NAME" value="Scenario: T01_Hesap" />
+      <option name="NAME_FILTER" value="^hotel$" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter --name &quot;^hotel$&quot;" />
+      <option name="SUGGESTED_NAME" value="Scenario: hotel" />
       <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
       <extension name="coverage">
         <pattern>
@@ -148,10 +151,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="JUnit.TestRunner" />
-        <item itemvalue="Cucumber Java.Scenario: T01_Hesap" />
+        <item itemvalue="Cucumber Java.Scenario: hotel" />
         <item itemvalue="JUnit.Runner" />
+        <item itemvalue="Cucumber Java.Scenario: T01_Hesap" />
         <item itemvalue="Cucumber Java.Feature: odev03_Excel" />
-        <item itemvalue="Cucumber Java.Feature: odev_Data_Tables" />
       </list>
     </recent_temporary>
   </component>

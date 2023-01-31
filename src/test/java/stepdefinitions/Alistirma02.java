@@ -133,6 +133,7 @@ public class Alistirma02 {
 
     @Then("browser kapat")
     public void browser_kapat() {
+        Driver.closeDriver();
 
 
     }
