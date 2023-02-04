@@ -35,7 +35,7 @@
 <a href="#"><span class="badge badge-primary">Smoke Test Report</span></a>
 </li>
 <li class="m-r-10">
-<a href="#"><span class="badge badge-primary">Jan 31, 2023 03:27:41 PM</span></a>
+<a href="#"><span class="badge badge-primary">Feb 4, 2023 12:12:31 PM</span></a>
 </li>
 </ul>
 </div>
@@ -66,13 +66,13 @@
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0">Started</p>
-<h3>Jan 31, 2023 03:27:41 PM</h3>
+<h3>Feb 4, 2023 12:12:31 PM</h3>
 </div></div>
 </div>
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0">Ended</p>
-<h3>Jan 31, 2023 03:28:14 PM</h3>
+<h3>Feb 4, 2023 12:12:42 PM</h3>
 </div></div>
 </div>
 <div class="col-md-3">
@@ -123,7 +123,7 @@
 </div>
 </div>
 <div class="card-footer">
-<div><small data-tooltip='100%'><b>1</b> scenarios passed</small></div>
+<div><small data-tooltip='100%'><b>4</b> scenarios passed</small></div>
 <div>
 <small data-tooltip='0%'><b>0</b> scenarios failed,
 <b>0</b> skipped, <b data-tooltip='%'>0</b> others
@@ -143,7 +143,7 @@
 </div>
 </div>
 <div class="card-footer">
-<div><small data-tooltip='100%'><b>12</b> steps passed</small></div>
+<div><small data-tooltip='100%'><b>16</b> steps passed</small></div>
 <div>
 <small data-tooltip='0%'><b>0</b> steps failed,
 <b>0</b> skipped, <b data-tooltip='%'>0</b> others
@@ -162,7 +162,7 @@
 </div></div>
 <script>
 var timeline = {
-"reservations_hotel":31.802
+"read_rezervasyon_bilgileri_databaseden_oku":9.816
 };
 </script>
 <div class="row">
@@ -172,7 +172,31 @@ var timeline = {
 <div class="card-body pb-0 pt-0"><table class="table table-sm table-bordered">
 <thead><tr class="bg-gray"><th>Name</th><th>Passed</th><th>Failed</th><th>Skipped</th><th>Others</th><th>Passed %</th></tr></thead><tbody>
 <tr>
-<td>@reservation</td>
+<td>@db_read</td>
+<td>4</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>@db_hotel_price</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>@db_hotel_address</td>
+<td>2</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>@db_hotel_name</td>
 <td>1</td>
 <td>0</td>
 <td>0</td>
@@ -207,13 +231,13 @@ failParent: 0,
 warningParent: 0,
 skipParent: 0,
 childCount: 5,
-passChild: 1,
+passChild: 4,
 failChild: 0,
 warningChild: 0,
 skipChild: 0,
 infoChild: 0,
 grandChildCount: 5,
-passGrandChild: 12,
+passGrandChild: 16,
 failGrandChild: 0,
 warningGrandChild: 0,
 skipGrandChild: 0,
@@ -238,7 +262,7 @@ eventsCount: 5,
 <li class="dropdown">
 <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-tag"></i></a>
 <ul id="tag-toggle" class="dropdown-menu dropdown-md p-v-0">
-<a class="dropdown-item" href="#">@reservation</a>
+<a class="dropdown-item" href="#">@db_read</a><a class="dropdown-item" href="#">@db_hotel_price</a><a class="dropdown-item" href="#">@db_hotel_address</a><a class="dropdown-item" href="#">@db_hotel_name</a>
 </ul>
 </li>
 </ul>
@@ -249,9 +273,9 @@ eventsCount: 5,
           tag=""
           device="">
           <div class="test-detail">
-            <p class="name">reservations_hotel</p>
+            <p class="name">read_rezervasyon_bilgileri_databaseden_oku</p>
             <p class="text-sm">
-              <span>3:27:42 PM</span> / <span>00:00:31:802</span>
+              <span>12:12:32 PM</span> / <span>00:00:09:816</span>
               <span class="badge pass-bg log float-right">Pass</span>
             </p>
           </div>
@@ -259,10 +283,10 @@ eventsCount: 5,
 <div class="detail-head">
 <div class="p-v-10">
 <div class="info">
-<h5 class="test-status text-pass">reservations_hotel</h5>
-<span class='badge badge-success'>01.31.2023 3:27:42 PM</span>
-<span class='badge badge-danger'>01.31.2023 3:28:14 PM</span>
-<span class='badge badge-default'>00:00:31:802</span>
+<h5 class="test-status text-pass">read_rezervasyon_bilgileri_databaseden_oku</h5>
+<span class='badge badge-success'>02.04.2023 12:12:32 PM</span>
+<span class='badge badge-danger'>02.04.2023 12:12:42 PM</span>
+<span class='badge badge-default'>00:00:09:816</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=1</span>
 <span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
 <span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
@@ -274,79 +298,125 @@ eventsCount: 5,
   <div class="card">
     <div class="card-header" role="tab">
       <div class="card-title">
-        <div class="node" id="2"><span class="badge log pass-bg mr-2">Pass</span>hotel</div>
+        <div class="node" id="2"><span class="badge log pass-bg mr-2">Pass</span>TC01_read_otel_bilgileri</div>
       </div>
     </div>
-        <div class="scenario_outline collapse">
-            <div class="card-body l1">
-              <div class="card-header">
-                <div class="card-title outline-child">
-                  <div class="node" id="3"><span class="badge log pass-bg mr-2">Pass</span>hotel</div>
-                </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="stepdefinitions.database_stepdefinitions.Read_Step_Definitions.user_connects_to_the_database()">
+                <span>Given user connects to the database</span>
+      <div>
+      </div>
               </div>
-              <div class="card-body mt-3 collapse">
-                  <div class="step pass-bg">
-                    <span>Given browser sayfasına gidilir</span>
+              <div class="step pass-bg" title="stepdefinitions.database_stepdefinitions.Read_Step_Definitions.gets_the_from_table(java.lang.String,java.lang.String)">
+                <span>And gets the "Price" from "tHOTELROOM" table</span>
       <div>
       </div>
-                  </div>
-                  <div class="step pass-bg">
-                    <span>When çerezler kabul edilir</span>
-      <div>
-      </div>
-                  </div>
-                  <div class="step pass-bg">
-                    <span>And user Name "manager" ve şifre "Manager1!" girilir ve click edilir</span>
-      <div>
-      </div>
-                  </div>
-                  <div class="step pass-bg">
-                    <span>And user list click edilir</span>
-      <div>
-      </div>
-                  </div>
-                  <div class="step pass-bg">
-                    <span>And add user verify edilir ve click edilir</span>
-      <div>
-      </div>
-                  </div>
-                  <div class="step pass-bg">
-                    <span>And gerekli datalar girilir "kemalke","Kemal32!","kemal6587@gmail.com","kemal kan","65874125","98746684","30/06/1999","USA, new york","jdjhd","hg"</span>
-      <div>
-      </div>
-                  </div>
-                  <div class="step pass-bg">
-                    <span>And save buttonuna click edilir</span>
-      <div>
-      </div>
-                  </div>
-                  <div class="step pass-bg">
-                    <span>And message verify edilir ve ok buttonuna click edilir</span>
-      <div>
-      </div>
-                  </div>
-                  <div class="step pass-bg">
-                    <span>And user liste click edilir</span>
-      <div>
-      </div>
-                  </div>
-                  <div class="step pass-bg">
-                    <span>And user name de search et ve search buttonuna click et</span>
-      <div>
-      </div>
-                  </div>
-                  <div class="step pass-bg">
-                    <span>And user name oldugunu verify et</span>
-      <div>
-      </div>
-                  </div>
-                  <div class="step pass-bg">
-                    <span>Then browserı kapat</span>
-      <div>
-      </div>
-                  </div>
               </div>
-            </div>
+              <div class="step pass-bg" title="stepdefinitions.database_stepdefinitions.Read_Step_Definitions.user_reads_all_of_the_column(java.lang.String)">
+                <span>And user reads all of the "Price" column</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.database_stepdefinitions.Read_Step_Definitions.close_the_connection()">
+                <span>Then close the connection</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="9"><span class="badge log pass-bg mr-2">Pass</span>TC02_read_otel_bilgileri</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="stepdefinitions.database_stepdefinitions.Read_Step_Definitions.user_connects_to_the_database()">
+                <span>Given user connects to the database</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.database_stepdefinitions.Read_Step_Definitions.gets_the_from_table(java.lang.String,java.lang.String)">
+                <span>And gets the "Name" from "tHOTEL" table</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.database_stepdefinitions.Read_Step_Definitions.user_reads_all_of_the_column(java.lang.String)">
+                <span>And user reads all of the "Name" column</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.database_stepdefinitions.Read_Step_Definitions.close_the_connection()">
+                <span>Then close the connection</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="16"><span class="badge log pass-bg mr-2">Pass</span>TC02_read_otel_bilgileri</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="stepdefinitions.database_stepdefinitions.Read_Step_Definitions.user_connects_to_the_database()">
+                <span>Given user connects to the database</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.database_stepdefinitions.Read_Step_Definitions.gets_the_from_table(java.lang.String,java.lang.String)">
+                <span>And gets the "Address" from "tHOTEL" table</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.database_stepdefinitions.Read_Step_Definitions.user_reads_all_of_the_column(java.lang.String)">
+                <span>And user reads all of the "Address" column</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.database_stepdefinitions.Read_Step_Definitions.close_the_connection()">
+                <span>Then close the connection</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="23"><span class="badge log pass-bg mr-2">Pass</span>TC02_read_otel_bilgileri</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="stepdefinitions.database_stepdefinitions.Read_Step_Definitions.user_connects_to_the_database()">
+                <span>Given user connects to the database</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.database_stepdefinitions.Read_Step_Definitions.gets_the_from_table(java.lang.String,java.lang.String)">
+                <span>And gets the "Code" from "tHOTEL" table</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.database_stepdefinitions.Read_Step_Definitions.user_reads_all_of_the_column(java.lang.String)">
+                <span>And user reads all of the "Code" column</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.database_stepdefinitions.Read_Step_Definitions.close_the_connection()">
+                <span>Then close the connection</span>
+      <div>
+      </div>
+              </div>
+          </div>
         </div>
   </div>
 </div>
@@ -365,21 +435,87 @@ eventsCount: 5,
 <div class="test-list">
 <div class="test-list-tools">
 <ul class="tools pull-left"><li><a href=""><span class="font-size-14">Category</span></a></li></ul>
-<ul class="tools text-right"><li><a href="#"><span class="badge badge-primary">1</span></a></li></ul>
+<ul class="tools text-right"><li><a href="#"><span class="badge badge-primary">4</span></a></li></ul>
 </div>
 <div class="test-list-wrapper scrollable">
 <ul class="test-list-item">
 <li class="test-item">
 <div class="test-detail">
 <span class="meta">
+<span class='badge log pass-bg'>4</span>
+</span>
+<p class="name">@db_read</p>
+<p class="duration text-sm">4 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@db_read</h4>
+<span status="pass" class='badge log pass-bg'>4 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>12:12:32 PM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='2'>TC01_read_otel_bilgileri</a>
+<div class="">
+<span class="badge badge-default">read_rezervasyon_bilgileri_databaseden_oku.TC01_read_otel_bilgileri</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>12:12:35 PM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='9'>TC02_read_otel_bilgileri</a>
+<div class="">
+<span class="badge badge-default">read_rezervasyon_bilgileri_databaseden_oku.TC02_read_otel_bilgileri</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>12:12:37 PM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='16'>TC02_read_otel_bilgileri</a>
+<div class="">
+<span class="badge badge-default">read_rezervasyon_bilgileri_databaseden_oku.TC02_read_otel_bilgileri</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>12:12:40 PM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='23'>TC02_read_otel_bilgileri</a>
+<div class="">
+<span class="badge badge-default">read_rezervasyon_bilgileri_databaseden_oku.TC02_read_otel_bilgileri</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
 <span class='badge log pass-bg'>1</span>
 </span>
-<p class="name">@reservation</p>
+<p class="name">@db_hotel_price</p>
 <p class="duration text-sm">1 tests</p>
 </div>
 <div class="test-contents d-none">
 <div class="info">
-<h4>@reservation</h4>
+<h4>@db_hotel_price</h4>
 <span status="pass" class='badge log pass-bg'>1 passed</span>
 </div>
 <table class='table table-sm mt-4'>
@@ -393,11 +529,93 @@ eventsCount: 5,
 <tbody>
 <tr class="tag-test-status" status="pass">
 <td><span class="badge log pass-bg">Pass</span></td>
-<td>15:27:42 PM</td>
+<td>12:12:32 PM</td>
 <td>
-<a href="#" class="linked" test-id='1' id='3'>hotel</a>
+<a href="#" class="linked" test-id='1' id='2'>TC01_read_otel_bilgileri</a>
 <div class="">
-<span class="badge badge-default">reservations_hotel.hotel</span>
+<span class="badge badge-default">read_rezervasyon_bilgileri_databaseden_oku.TC01_read_otel_bilgileri</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>2</span>
+</span>
+<p class="name">@db_hotel_address</p>
+<p class="duration text-sm">2 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@db_hotel_address</h4>
+<span status="pass" class='badge log pass-bg'>2 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>12:12:37 PM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='16'>TC02_read_otel_bilgileri</a>
+<div class="">
+<span class="badge badge-default">read_rezervasyon_bilgileri_databaseden_oku.TC02_read_otel_bilgileri</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>12:12:40 PM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='23'>TC02_read_otel_bilgileri</a>
+<div class="">
+<span class="badge badge-default">read_rezervasyon_bilgileri_databaseden_oku.TC02_read_otel_bilgileri</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>1</span>
+</span>
+<p class="name">@db_hotel_name</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@db_hotel_name</h4>
+<span status="pass" class='badge log pass-bg'>1 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>12:12:35 PM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='9'>TC02_read_otel_bilgileri</a>
+<div class="">
+<span class="badge badge-default">read_rezervasyon_bilgileri_databaseden_oku.TC02_read_otel_bilgileri</span>
 </div>
 </td>
 </tr>
