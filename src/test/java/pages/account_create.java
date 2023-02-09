@@ -68,4 +68,7 @@ public class account_create {
     @FindBy(xpath = "//b")
     public WebElement message;
 
+    @FindBy(xpath = "(//button[@type='submit'])[1]")
+    public WebElement createButton;
+
 }
