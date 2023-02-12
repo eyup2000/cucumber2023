@@ -21,7 +21,7 @@ import org.junit.runner.RunWith;
 
             features = "src/test/resources/DataBase_feature",
             glue = "stepdefinitions",
-            tags = "@db_read",
+            tags = "@selenium_grid",
             dryRun = false
     )
    public class DBRunner {
