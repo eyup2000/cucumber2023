@@ -18,7 +18,7 @@ import org.junit.runner.RunWith;
             },
             features = "src/test/resources",
             glue = "stepdefinitions",
-            tags = "@new_create_account",
+            tags = "@tag_name",
             dryRun = false
 
     )
