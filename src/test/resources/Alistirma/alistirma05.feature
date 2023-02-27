@@ -11,4 +11,4 @@ Feature: US_001
     Then ok butonuna tıkla ve browser kapat
     Examples: test_data
       | userName | password  | Username | pasword   | email              | fullName  | Phone     | socialSecurityNumber | drivingLicense | Address         | workingSector |
-      | manager  | Manager1! | Fahrii   | Manager2! | fahri584@gmail.com | Fahri hak | 698547123 | 987456321            | jsjsjsj        | istanbul,turkey | jsbhbcdhbchdv |
+      | manager  | Manager1! | Fahrii   | Manager2! | fahri584@gmail.com | Fahri hak | (979) 646-5416 | 987456321            | jsjsjsj        | istanbul,turkey | jsbhbcdhbchdv |
