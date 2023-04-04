@@ -21,15 +21,15 @@ public class Hooks {
         System.out.println("Bu bir hooks @Before methodudur.");
 
     }
-    @After
-
-    public void tearDown(Scenario scenario) {
-  final byte[]  screenshot =  ((TakesScreenshot) Driver.getDriver()).getScreenshotAs(OutputType.BYTES);
-//    // screenShot'İ scenario raporuna ekle
-     if (scenario.isFailed()) {
-            scenario.attach(screenshot, "image/png", "screenShot");
-       }
-    }
+   // @After
+//
+//    public void tearDown(Scenario scenario) {
+//  final byte[]  screenshot =  ((TakesScreenshot) Driver.getDriver()).getScreenshotAs(OutputType.BYTES);
+////    // screenShot'İ scenario raporuna ekle
+//     if (scenario.isFailed()) {
+//            scenario.attach(screenshot, "image/png", "screenShot");
+       //}
+    //}
     }
 
 
